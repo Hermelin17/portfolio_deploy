@@ -70,6 +70,20 @@ const projects = [
       { src: "/Images/starwars/starwarsmov.mov", caption: "Video showing the nodes interacting with each other" },
     ],
   },
+  {
+    id: 6,
+    title: "Information visualization project",
+    description:
+      "Visualization of recorded earthquakes around the world. The slider can be used to select a specific time period.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    color: "#61caff",
+    link: "https://github.com/TeoHedelin/Credit-Card-Input",
+    images: [
+      { src: "/Images/eq/overview.png", caption: "Startpage " },
+      { src: "/Images/eq/select.png", caption: "Selecting a earthquake in the chart and seeing the details" },
+      { src: "/Images/eq/record.mov", caption: "Video showing how the website can be used" },
+    ],
+  },
 ];
 
 export default projects;
