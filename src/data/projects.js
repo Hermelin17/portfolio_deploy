@@ -79,7 +79,7 @@ const projects = [
     images: [
       { src: "/Images/starwars/anakin.png", caption: "Hovering over Anakin node shows information about the character" },
       { src: "/Images/starwars/AniObi.png", caption: "Hovering over the line between Anakin and Obi-Wan shows the number of interactions between the characters" },
-      { src: "/Images/starwars/starwarsmov.mov", caption: "Video showing the nodes interacting with each other" },
+      { src: "/Images/starwars/starwarsmov.mp4", caption: "Video showing the nodes interacting with each other" },
     ],
   },
   {
