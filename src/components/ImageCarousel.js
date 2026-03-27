@@ -17,8 +17,6 @@ function getStyle(slot, animate) {
     position: "absolute",
     left: "50%",
     top: "50%",
-    width: "80%",
-    aspectRatio: "15 / 9",
     borderRadius: 12,
     overflow: "hidden",
     background: "rgba(0, 0, 0, 0.3)",
@@ -77,6 +75,8 @@ function ImageCarousel({ images }) {
 
   if (!images || images.length === 0) return null;
 
+  const hasTallImages = images.some((img) => img.tall);
+
   let entries;
   switch (phase) {
     case "prepare-left":
@@ -122,7 +122,7 @@ function ImageCarousel({ images }) {
   return (
     <div className="carousel">
       <div className="carousel-track">
-        <div className="carousel-viewport">
+        <div className={`carousel-viewport${hasTallImages ? " carousel-viewport--tall" : ""}`}>
           {entries.map(({ offset, slot, anim }) => {
             const idx = wrap(current + offset);
             const item = images[idx];
@@ -131,11 +131,14 @@ function ImageCarousel({ images }) {
             const mediaStyle = {
               width: "100%",
               height: "100%",
-              objectFit: item.tall ? "contain" : "cover",
               display: "block",
             };
             return (
-              <div key={offset} style={getStyle(slot, anim)}>
+              <div
+                key={offset}
+                className={`carousel-slide${hasTallImages ? " carousel-slide--tall" : ""}`}
+                style={getStyle(slot, anim)}
+              >
                 {isVideo ? (
                   <video
                     src={src}

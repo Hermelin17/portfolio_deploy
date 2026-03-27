@@ -92,6 +92,39 @@
   max-width: 400px;
 }
 
+.skills-label {
+  margin-top: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #666;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  max-width: 420px;
+}
+
+.skill-tag {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 40px 20px;
@@ -193,6 +226,30 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+}
+
+.carousel-viewport--tall {
+  aspect-ratio: 3 / 4;
+}
+
+.carousel-slide {
+  width: 80%;
+  aspect-ratio: 15 / 9;
+}
+
+.carousel-slide img,
+.carousel-slide video {
+  object-fit: cover;
+}
+
+.carousel-slide--tall {
+  width: 50%;
+  aspect-ratio: 9 / 16;
+}
+
+.carousel-slide--tall img,
+.carousel-slide--tall video {
+  object-fit: contain;
 }
 
 .carousel-arrow {
@@ -321,5 +378,29 @@
     width: 32px;
     height: 32px;
     font-size: 22px;
+  }
+
+  .carousel-viewport {
+    aspect-ratio: unset;
+    height: 50vw;
+  }
+
+  .carousel-slide {
+    width: 70vw;
+    aspect-ratio: 16 / 9;
+  }
+
+  .carousel-slide img,
+  .carousel-slide video {
+    object-fit: contain;
+  }
+
+  .carousel-viewport--tall {
+    height: 115vw;
+  }
+
+  .carousel-slide--tall {
+    width: 55vw;
+    aspect-ratio: 1 / 2;
   }
 }
