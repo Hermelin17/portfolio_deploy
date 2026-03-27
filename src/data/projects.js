@@ -77,7 +77,7 @@ const projects = [
     color: "#b0ad4a",
     link: "https://github.com/Hermelin17/TNM111/tree/main/Assignment%204",
     images: [
-      { src: "/Images/starwars/anakin.png", caption: "Hovering over Anakin node shows information about the character" },
+      { src: "/Images/starwars/Anakin.png", caption: "Hovering over Anakin node shows information about the character" },
       { src: "/Images/starwars/AniObi.png", caption: "Hovering over the line between Anakin and Obi-Wan shows the number of interactions between the characters" },
       { src: "/Images/starwars/starwarsmov.mp4", caption: "Video showing the nodes interacting with each other" },
     ],
