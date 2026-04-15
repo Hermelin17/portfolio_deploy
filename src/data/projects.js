@@ -47,7 +47,7 @@ const projects = [
       "A React website for a card game where you can create your own decks and play against other players. Developed in React and Node.js.",
     tags: ["React", "Node.js", "Firebase"],
     color: "#2a3b91",
-    link: "https://github.com/TeoHedelin/Card-Game",
+    link: "https://www.youtube.com/watch?v=gcDUHClD8g8",
     images: [
       { src: "/Images/Awebb/Start.png", caption: "Start page with dynamic background of unlocked cards" },
       { src: "/Images/Awebb/samling.png", caption: "Page to see collected cards and unlock new cards" },
